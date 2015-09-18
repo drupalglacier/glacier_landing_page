@@ -225,11 +225,10 @@ function glacier_landingpage_views_default_views() {
     3 => 0,
     4 => 0,
   );
-  $handler->display->display_options['path'] = 'admin/content/landinpages';
-  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['path'] = 'admin/content/landingpages';
   $handler->display->display_options['menu']['title'] = 'Landingpages';
   $handler->display->display_options['menu']['weight'] = '0';
-  $handler->display->display_options['menu']['name'] = 'menu-administration';
+  $handler->display->display_options['menu']['name'] = 'devel';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
   $export['landingpages'] = $view;
