@@ -1,22 +1,22 @@
 <?php
 /**
  * @file
- * glacier_landingpage.field_group.inc
+ * glacier_landing_page.field_group.inc
  */
 
 /**
  * Implements hook_field_group_info().
  */
-function glacier_landingpage_field_group_info() {
+function glacier_landing_page_field_group_info() {
   $export = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_content|node|landingpage|form';
+  $field_group->identifier = 'group_content|node|landing_page|form';
   $field_group->group_name = 'group_content';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'landingpage';
+  $field_group->bundle = 'landing_page';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
@@ -37,7 +37,7 @@ function glacier_landingpage_field_group_info() {
       ),
     ),
   );
-  $export['group_content|node|landingpage|form'] = $field_group;
+  $export['group_content|node|landing_page|form'] = $field_group;
 
   return $export;
 }

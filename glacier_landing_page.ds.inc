@@ -1,20 +1,20 @@
 <?php
 /**
  * @file
- * glacier_landingpage.ds.inc
+ * glacier_landing_page.ds.inc
  */
 
 /**
  * Implements hook_ds_layout_settings_info().
  */
-function glacier_landingpage_ds_layout_settings_info() {
+function glacier_landing_page_ds_layout_settings_info() {
   $export = array();
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
-  $ds_layout->id = 'node|landingpage|form';
+  $ds_layout->id = 'node|landing_page|form';
   $ds_layout->entity_type = 'node';
-  $ds_layout->bundle = 'landingpage';
+  $ds_layout->bundle = 'landing_page';
   $ds_layout->view_mode = 'form';
   $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
@@ -54,7 +54,7 @@ function glacier_landingpage_ds_layout_settings_info() {
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
   );
-  $export['node|landingpage|form'] = $ds_layout;
+  $export['node|landing_page|form'] = $ds_layout;
 
   return $export;
 }

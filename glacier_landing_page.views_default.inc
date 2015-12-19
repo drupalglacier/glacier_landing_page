@@ -1,28 +1,28 @@
 <?php
 /**
  * @file
- * glacier_landingpage.views_default.inc
+ * glacier_landing_page.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function glacier_landingpage_views_default_views() {
+function glacier_landing_page_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'landingpages';
+  $view->name = 'landing_pages';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Landingpages';
+  $view->human_name = 'Landing pages';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Landingpages';
+  $handler->display->display_options['title'] = 'Landing pages';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -56,7 +56,7 @@ function glacier_landingpage_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'landingpage' => 'landingpage',
+    'landing_page' => 'landing_page',
   );
   /* Filter criterion: Content: Language */
   $handler->display->display_options['filters']['language']['id'] = 'language';
@@ -70,13 +70,13 @@ function glacier_landingpage_views_default_views() {
   /* Display: all */
   $handler = $view->new_display('page', 'all', 'page_all');
   $handler->display->display_options['enabled'] = FALSE;
-  $handler->display->display_options['path'] = 'landingpages';
+  $handler->display->display_options['path'] = 'landing_pages';
 
   /* Display: admin */
   $handler = $view->new_display('page', 'admin', 'page_admin');
   $handler->display->display_options['defaults']['access'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['access']['perm'] = 'edit own landingpage content';
+  $handler->display->display_options['access']['perm'] = 'edit own landing_page content';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '50';
@@ -157,7 +157,7 @@ function glacier_landingpage_views_default_views() {
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['empty'] = TRUE;
-  $handler->display->display_options['header']['area_text_custom']['content'] = '<ul class="action-links"><li><a href="/node/add/landingpage">Add new content</a></li></ul>';
+  $handler->display->display_options['header']['area_text_custom']['content'] = '<ul class="action-links"><li><a href="/node/add/landing_page">Add new content</a></li></ul>';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -207,7 +207,7 @@ function glacier_landingpage_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'landingpage' => 'landingpage',
+    'landing_page' => 'landing_page',
   );
   /* Filter criterion: Content: Title */
   $handler->display->display_options['filters']['title']['id'] = 'title';
@@ -225,13 +225,13 @@ function glacier_landingpage_views_default_views() {
     3 => 0,
     4 => 0,
   );
-  $handler->display->display_options['path'] = 'admin/content/landingpages';
-  $handler->display->display_options['menu']['title'] = 'Landingpages';
+  $handler->display->display_options['path'] = 'admin/content/landing_pages';
+  $handler->display->display_options['menu']['title'] = 'Landing pages';
   $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'devel';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
-  $export['landingpages'] = $view;
+  $export['landing_pages'] = $view;
 
   return $export;
 }

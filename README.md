@@ -1,8 +1,8 @@
-# Landingpage
+# Landing page
 This feature uses content blocks (glacier_content_blocks) to make it possible to build easy customizable landing pages. It includes a „Product“ content type plus a view with „all“ grid and „admin“ display.
 
 ## About
-Github: https://github.com/drupalglacier/glacier_landingpage
+Github: https://github.com/drupalglacier/glacier_landing_page
 
 ### Author
 Markus Oberlehner  

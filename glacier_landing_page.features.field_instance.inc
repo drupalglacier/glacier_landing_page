@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * glacier_landingpage.features.field_instance.inc
+ * glacier_landing_page.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function glacier_landingpage_field_default_field_instances() {
+function glacier_landing_page_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-landingpage-field_content_blocks'
-  $field_instances['node-landingpage-field_content_blocks'] = array(
-    'bundle' => 'landingpage',
+  // Exported field_instance: 'node-landing_page-field_content_blocks'
+  $field_instances['node-landing_page-field_content_blocks'] = array(
+    'bundle' => 'landing_page',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -59,9 +59,9 @@ function glacier_landingpage_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-landingpage-title_field'
-  $field_instances['node-landingpage-title_field'] = array(
-    'bundle' => 'landingpage',
+  // Exported field_instance: 'node-landing_page-title_field'
+  $field_instances['node-landing_page-title_field'] = array(
+    'bundle' => 'landing_page',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',

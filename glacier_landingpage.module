@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Landingpage feature.
- */
-
-include_once 'glacier_landingpage.features.inc';
